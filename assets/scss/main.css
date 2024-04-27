@@ -331,6 +331,14 @@ svg rect {
     padding: 70px 0;
   }
 }
+.ourGoal .gap {
+  gap: 0;
+}
+@media (min-width: 1200px) {
+  .ourGoal .gap {
+    gap: 2rem;
+  }
+}
 .ourGoal .ourGoal-title p {
   font-size: 25px;
   font-family: ExoSemiBold;
@@ -502,7 +510,7 @@ svg rect {
 .ready-get-system .textReady h2 {
   font-size: 100px;
   font-family: ExoSemiBold;
-  line-height: 84px;
+  line-height: 1.1;
   margin-bottom: 52px;
   display: inline-block;
 }
@@ -521,11 +529,9 @@ svg rect {
   background-color: #fff;
   color: #000;
   border: none;
-}
-@media (max-width: 1024px) {
-  .ready-get-system .textReady .btn-main-black {
-    width: 50%;
-  }
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-inline-start: 65px;
 }
 @media (max-width: 767px) {
   .ready-get-system .textReady .btn-main-black {
@@ -549,10 +555,21 @@ svg rect {
   font-size: 25px;
   font-family: ExoSemiBold;
 }
+@media (max-width: 600px) {
+  .ready-get-system .textReady .textFooter .textSmart-title h3, .ready-get-system .textReady .textFooter .textSmart-title .footer .middle-footer .footer-title h2, .footer .middle-footer .footer-title .ready-get-system .textReady .textFooter .textSmart-title h2 {
+    font-size: 20px;
+  }
+}
 .ready-get-system .textReady .textFooter .textSmart-desc p {
   font-size: 25px;
   line-height: 45px;
   font-family: ExoMedium;
+}
+@media (max-width: 600px) {
+  .ready-get-system .textReady .textFooter .textSmart-desc p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
 }
 
 .footer {

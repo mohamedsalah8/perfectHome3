@@ -121,6 +121,14 @@
          padding: 70px 0;
      }
 
+     .gap {
+         gap: 0;
+
+         @media (min-width: 1200px) {
+             gap: 2rem;
+         }
+     }
+
      .ourGoal-title {
          p {
              font-size: 25px;
@@ -238,7 +246,7 @@
                      margin-bottom: 22px;
                      color: $blackColor;
                      text-transform: capitalize;
- 
+
                      @media (max-width:1024px) {
                          font-size: 22px;
                          line-height: 30px;
@@ -252,10 +260,12 @@
                      line-height: 35px;
                      color: $grayColor300;
                      text-transform: capitalize;
+
                      @media (max-width:1024px) {
-                        font-size: 20px;
-                        line-height: 28px;
-                    }
+                         font-size: 20px;
+                         line-height: 28px;
+                     }
+
                      @media (max-width:600px) {
                          font-size: 18px;
                          line-height: 25px;
@@ -275,9 +285,10 @@
      border-radius: 15px;
 
      @media (max-width:1024px) {
-        padding:60px 65px 50px 40px;
+         padding: 60px 65px 50px 40px;
 
-    }
+     }
+
      @media (max-width:768px) {
          padding: 40px 10px;
 
@@ -306,13 +317,14 @@
          h2 {
              font-size: 100px;
              font-family: ExoSemiBold;
-             line-height: 84px;
+             line-height: 1.1;
              margin-bottom: 52px;
              display: inline-block;
 
              @media (max-width:1024px) {
-                font-size: 60px;
-            }
+                 font-size: 60px;
+             }
+
              @media (max-width:768px) {
                  font-size: 40px;
                  line-height: 1.2;
@@ -323,13 +335,15 @@
              background-color: $whitColor;
              color: $blackColor;
              border: none;
-        
-             @media (max-width:1024px) {
-                width: 50% ;
-            }
-            @media (max-width:767px) {
-                width: 100% ;
-            }
+             width: fit-content;
+             padding-inline-start: 65px;
+
+             @media (max-width:1200px) {}
+
+             @media (max-width:767px) {
+                 width: 100%;
+             }
+
              .arow-black {
                  background-color: $blackColor;
 
@@ -353,6 +367,9 @@
                  h3 {
                      font-size: 25px;
                      font-family: ExoSemiBold;
+                     @media (max-width:600px) {
+                        font-size: 20px;
+                    }
                  }
              }
 
@@ -361,6 +378,11 @@
                      font-size: 25px;
                      line-height: 45px;
                      font-family: ExoMedium;
+
+                     @media (max-width:600px) {
+                         font-size: 18px;
+                         line-height: 1.4;
+                     }
                  }
              }
          }
