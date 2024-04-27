@@ -1,0 +1,514 @@
+ .about-hero {
+     padding: 170px 0 0 0;
+     background-image: url("../../../assets/img/bgAbout.svg");
+     background-size: 50% 100%;
+     background-position: right top;
+     background-repeat: no-repeat;
+
+     @media (max-width: 768px) {
+         padding: 100px 0 0 0;
+
+     }
+
+     .text-about {
+         margin: 100px 0;
+
+         @media (max-width: 600px) {
+             margin: 30px 0;
+         }
+
+         h1 {
+             font-size: 100px;
+             font-family: ExoSemiBold;
+
+             @media (max-width: 1200px) {
+                 font-size: 80px;
+             }
+
+             @media (max-width: 1024px) {
+                 font-size: 80px;
+             }
+
+             @media (max-width: 992px) {
+                 font-size: 65px;
+             }
+
+
+             @media (max-width: 768px) {
+                 font-size: 60px;
+                 margin-top: 15px;
+             }
+
+             @media (max-width: 600px) {
+                 font-size: 35px;
+                 margin-top: 15px;
+             }
+         }
+
+         @media (max-width: 768px) {
+             font-size: 40px;
+         }
+
+         .d-flex {
+             margin-top: 62px;
+             justify-content: space-between;
+             align-items: end;
+
+             p {
+                 font-size: 35px;
+                 font-family: ExoMedium;
+
+                 @media (max-width: 1024px) {
+                     font-size: 28px;
+                     line-height: 1.2;
+                 }
+
+                 @media (max-width: 600px) {
+                     font-size: 20px;
+                     margin-top: 15px;
+                 }
+             }
+
+             .explore {
+                 font-size: 25px;
+                 font-family: ExoBold;
+                 color: $blackColor;
+
+                 @media (max-width: 600px) {
+                     font-size: 18px;
+                     margin-top: 15px;
+                 }
+
+                 span {
+                     margin-inline-start: 10px;
+
+                     svg {
+                         color: $blackColor;
+
+                         @media (max-width: 600px) {
+                             width: 14px;
+                         }
+                     }
+                 }
+             }
+
+         }
+
+     }
+
+     .about-hero-img {
+         margin-top: 46px;
+
+         @media (max-width: 600px) {
+             margin-top: 0px;
+
+         }
+     }
+ }
+
+ .container-fluid1 {
+     padding: 0 120px;
+
+     @media (max-width: 1024px) {
+         padding: 0 40px;
+     }
+ }
+
+ .ourGoal {
+     padding: 115px 0;
+
+     @media (max-width: 768px) {
+         padding: 70px 0;
+     }
+
+     .ourGoal-title {
+         p {
+             font-size: 25px;
+             font-family: ExoSemiBold;
+
+             @media (max-width: 768px) {
+                 font-size: 18px;
+             }
+         }
+     }
+
+     .ourGoal-text {
+         h2 {
+             font-size: 55px;
+             font-family: ExoBold;
+
+             @media (max-width: 1024px) {
+                 font-size: 28px;
+                 line-height: 1.4;
+             }
+
+             @media (max-width: 768px) {
+                 font-size: 40px;
+                 margin-top: 15px;
+             }
+
+             @media (max-width: 768px) {
+                 font-size: 25px;
+
+             }
+         }
+
+         p {
+             font-size: 25px;
+             font-family: ExoSemiBold;
+             margin-top: 42px;
+
+             @media (max-width: 1024px) {
+                 font-size: 20px;
+             }
+         }
+
+     }
+
+     .tab-about {
+         margin-top: 42px;
+
+         .image-container {
+             img {
+                 max-width: 645px;
+
+                 @media (max-width:767px) {
+                     max-width: 100%;
+                 }
+             }
+         }
+
+         .nav {
+             .nav-item {
+                 .nav-link {
+                     font-size: 40px;
+                     color: $grayColor200;
+                     font-family: ExoSemiBold;
+                     margin-top: 12px;
+                     border-bottom: none;
+                     border: none;
+
+                     @media (max-width: 1024px) {
+                         font-size: 30px;
+                         margin-top: 5px;
+
+                     }
+
+                     @media (max-width:768px) {
+                         font-size: 25px;
+                     }
+                 }
+
+                 .nav-link.active {
+                     background-color: transparent;
+                     border: none;
+                     color: $blackColor;
+                 }
+
+                 .nav-link:hover {
+                     background-color: transparent;
+                     color: $blackColor;
+                     ;
+                 }
+
+                 .nav-link:focus {
+                     background-color: transparent;
+                     color: $blackColor;
+                     border: none;
+                 }
+             }
+         }
+
+         .tab-content {
+             margin-top: 72px;
+
+             @media (max-width: 1024px) {
+                 margin-top: 25px;
+             }
+
+             @media (max-width:767px) {
+                 margin-top: 42px;
+             }
+
+             .tab-pane {
+                 .tab-pane-title {
+                     font-size: 30px;
+                     font-family: ExoSemiBold;
+                     line-height: 40px;
+                     margin-bottom: 22px;
+                     color: $blackColor;
+                     text-transform: capitalize;
+ 
+                     @media (max-width:1024px) {
+                         font-size: 22px;
+                         line-height: 30px;
+                         margin-bottom: 15px;
+                     }
+                 }
+
+                 .tab-pane-desc {
+                     font-size: 25px;
+                     font-family: ExoMedium;
+                     line-height: 35px;
+                     color: $grayColor300;
+                     text-transform: capitalize;
+                     @media (max-width:1024px) {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                     @media (max-width:600px) {
+                         font-size: 18px;
+                         line-height: 25px;
+                     }
+                 }
+             }
+         }
+     }
+ }
+
+ .ready-get-system {
+     padding: 76px 108px 52px 131px;
+     background-image: linear-gradient(to right, #E3B925 0%, #DB8126 100%);
+     position: relative;
+     z-index: 1;
+     margin: 20px 1rem;
+     border-radius: 15px;
+
+     @media (max-width:1024px) {
+        padding:60px 65px 50px 40px;
+
+    }
+     @media (max-width:768px) {
+         padding: 40px 10px;
+
+     }
+
+     &::after {
+         content: "";
+         width: 100%;
+         height: 100%;
+         background-image: url("https://b.top4top.io/p_3036zwyfz1.png");
+         background-size: 50% 100%;
+         background-position: right;
+         background-repeat: no-repeat;
+         position: absolute;
+         inset-inline-end: 0;
+         top: 0;
+         z-index: -1;
+
+         @media (max-width:768px) {
+             background-size: 100% 100%;
+
+         }
+     }
+
+     .textReady {
+         h2 {
+             font-size: 100px;
+             font-family: ExoSemiBold;
+             line-height: 84px;
+             margin-bottom: 52px;
+             display: inline-block;
+
+             @media (max-width:1024px) {
+                font-size: 60px;
+            }
+             @media (max-width:768px) {
+                 font-size: 40px;
+                 line-height: 1.2;
+             }
+         }
+
+         .btn-main-black {
+             background-color: $whitColor;
+             color: $blackColor;
+             border: none;
+        
+             @media (max-width:1024px) {
+                width: 50% ;
+            }
+            @media (max-width:767px) {
+                width: 100% ;
+            }
+             .arow-black {
+                 background-color: $blackColor;
+
+             }
+
+             &::after {
+                 background-color: $blackColor;
+                 color: $whitColor;
+             }
+
+             &:hover {
+
+                 color: $whitColor;
+             }
+         }
+
+         .textFooter {
+             margin-top: 53px;
+
+             .textSmart-title {
+                 h3 {
+                     font-size: 25px;
+                     font-family: ExoSemiBold;
+                 }
+             }
+
+             .textSmart-desc {
+                 p {
+                     font-size: 25px;
+                     line-height: 45px;
+                     font-family: ExoMedium;
+                 }
+             }
+         }
+     }
+
+
+ }
+
+ .footer {
+     padding: 81px 0;
+
+     @media (max-width: 768px) {
+         padding: 40px 0;
+     }
+
+     .container-fluid {
+         padding: 0 113px;
+
+         @media (max-width: 768px) {
+             padding: 0 40px;
+         }
+     }
+
+     .top-footer {
+         padding: 10px 0 90px 0;
+         border-bottom: 1px $grayColor300 solid;
+
+         @media (max-width: 768px) {
+             padding: 10px 0 40px 0;
+         }
+
+         .footer-logo {
+             img {
+                 max-width: 170px;
+
+                 @media (max-width:768px) {
+                     margin-bottom: 40px;
+                 }
+             }
+         }
+
+         .footer-title {
+             a {
+                 font-size: 46px;
+                 font-family: ExoSemiBold;
+                 line-height: 35px;
+                 color: $blackColor;
+                 text-decoration: none;
+
+                 @media (max-width:767px) {
+                     font-size: 25px;
+                     line-height: 1.2;
+                 }
+             }
+         }
+     }
+
+     .middle-footer {
+         padding-top: 79px;
+
+         .footer-title {
+             h3 {
+                 font-size: 25px;
+                 font-family: ExoSemiBold;
+                 line-height: 39px;
+                 color: $blackColor;
+                 margin-bottom: 13px;
+
+                 @media (max-width:767px) {
+                     font-size: 18px;
+                     line-height: 1.2;
+                 }
+             }
+
+             h2 {
+                 @extend h3;
+                 width: 436px;
+
+                 @media (max-width:767px) {
+                     width: auto;
+                 }
+
+             }
+
+             ul {
+                 li {
+                     margin-bottom: 10px;
+                     list-style: none;
+
+                     a {
+                         font-size: 20px;
+                         font-family: ExoRegular;
+                         line-height: 39px;
+                         color: $blackColor;
+                         text-decoration: none;
+
+                         @media (max-width:767px) {
+                             font-size: 18px;
+                             line-height: 1.2;
+                         }
+                     }
+                 }
+             }
+
+             .img-app {
+                 img {
+                     max-width: 151px;
+
+
+                 }
+             }
+         }
+
+         .row {
+             @media (max-width:767px) {
+                 gap: 30px;
+
+             }
+         }
+     }
+
+     .bottom-footer {
+         .copyright {
+             margin-top: 30px;
+
+         }
+
+         .back-to-top {
+             .btn-to-top {
+                 margin-top: 60px;
+                 background-color: $blackColor;
+                 color: $whitColor;
+                 border: none;
+                 border-radius: 50px;
+                 padding: 15px 40px;
+                 font-size: 16px;
+                 font-family: ExoRegular;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 gap: 15px;
+
+                 &:hover {
+                     background-color: $mainColor;
+                     color: $blackColor;
+                 }
+
+             }
+         }
+     }
+ }

@@ -1,0 +1,55 @@
+.showText {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+    visibility: visible;
+
+}
+
+.hideText {
+    opacity: 0;
+    visibility: hidden !important;
+    transform: translateX(-20%);
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+}
+
+.transformLevel {
+    transform: translate(10px, 10px);
+}
+
+#svg {
+    transition: all .5s;
+}
+svg rect {
+    transition: all .5s;
+}
+.svgTransform {
+    transform: translate(-35%, 10px) scale(1.1);
+}
+
+.translevel1{
+    transform: translate(-30px, 0px);
+}
+.translevel2{
+    transform: translate(-15px, 2px);
+}
+.translevel4{
+    transform: translate(-10px, 15px);
+}
+.transLevel3{
+    transform: translate(35px, -15px);
+}
+.translevel5 {
+    transform: translate(45px, 40px);
+}
+.translevel6 {
+    transform: translate(-5px, 0px);
+}
+.translevelWithAction {
+    transform: translate(60px, -25px);
+}
+
+ 
+
+ 

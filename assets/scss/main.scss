@@ -1,0 +1,294 @@
+ @import "bootstrap.min.css";
+ @import "_custom-variables/variables";
+ @import "_custom-variables/header";
+ @import "_custom-variables/static";
+ @import "_custom-variables/animation";
+ @import "_components/about";
+
+ @import "../css/fonts.css";
+
+ .hero {
+    padding: 171px 0 0 0;
+    height: 100vh;
+    //  @media (max-width:767px) {
+    //      padding: 40px 0;
+    //  }
+     .title-hero h1 {
+         font-size: 80px;
+         font-family: ExoBlack;
+         line-height: 93px;
+         text-transform: capitalize;
+         display: inline-block;
+         position: relative;
+
+         @media (max-width:1024px) {
+             font-size: 70px;
+
+         }
+
+         @media (max-width:767px) {
+             font-size: 60px;
+         }
+
+         span {
+             font-size: 102px;
+
+             @media (max-width:1024px) {
+                 font-size: 80px;
+
+             }
+
+             @media (max-width:767px) {
+                 font-size: 80px;
+             }
+         }
+
+         &::before {
+             content: "";
+             width: 3px;
+             height: 69px;
+             background-color: $mainColor;
+             position: absolute;
+             bottom: -20px;
+             inset-inline-end: 5px;
+             transform: rotate(40deg);
+             /* Adjust the degree value as needed */
+
+         }
+
+         &::after {
+             content: "";
+             width: 3px;
+             height: 69px;
+             background-color: $mainColor;
+             position: absolute;
+             top: -15px;
+             inset-inline-start: 10px;
+             transform: rotate(40deg);
+
+         }
+
+     }
+
+     .desc-hero {
+         p {
+             font-family: ExoBold;
+             font-size: 20px;
+             margin-top: 10px;
+         }
+
+         @media (max-width:767px) {
+             font-size: 16px;
+         }
+     }
+
+     .footerHero {
+         padding: 10px 118px;
+
+         @media (max-width:1024px) {
+             padding: unset;
+         }
+
+         @media (max-width:768px) {
+             padding: 10px 20px;
+         }
+
+         .d-flex {
+             justify-content: space-between;
+             align-items: center;
+             flex-direction: row;
+
+             @media (max-width:768px) {
+                 flex-direction: column;
+                 width: 100%;
+                 align-items: start;
+                 gap: 20px;
+             }
+         }
+
+         .app {
+             .downloadApp {
+                 display: flex;
+                 gap: 4px;
+
+                 a {
+                     img {
+                         max-width: 135px;
+                         height: 45px;
+                     }
+                 }
+             }
+
+             .copyRight {
+                 p {
+                     font-size: 15px;
+                     margin-top: 12px;
+                 }
+             }
+         }
+
+         .discover {
+             display: flex;
+
+             span {
+                 width: 12px;
+                 height: 12px;
+                 background-color: $mainColor;
+                 border-radius: 50%;
+                 display: inline-block;
+             }
+
+             p {
+                 font-family: ExoMedium;
+                 font-size: 17px;
+                 @media (max-width:767px) {
+                    font-size: 14px;
+                 }
+                 br {
+                    @media (max-width:767px) {
+                        display: none;
+                     } 
+                 }
+             }
+         }
+     }
+
+     .offcanvas {
+         width: 375px;
+         border-color: #f1f1f1;
+         padding: 36px;
+
+         .offcanvas-header {
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column;
+             gap: 5px;
+
+             .imgHeader {
+                 img {
+                     max-width: 157px;
+                 }
+             }
+
+             .smallMap {
+                 margin-top: 42px;
+                 cursor: pointer;
+
+                 img {
+                     max-width: 156px;
+                 }
+             }
+         }
+
+         .offcanvas-body {
+             .tabs {
+                 .nav-link {
+                     background-color: $grayColor100;
+                     margin-bottom: 10px;
+                     font-size: 17px;
+                     padding: 20px;
+                     border-radius: 30px;
+                     color: $blackColor;
+                     font-family: ExoMedium;
+                     transition: all .5s;
+                     text-transform: capitalize;
+
+                     &:hover {
+                         background-color: $mainColor;
+                     }
+                 }
+
+                 .nav-link.active {
+                     background-color: $mainColor;
+                     color: $whitColor;
+                 }
+             }
+         }
+
+         .offcanvas-footer {
+            
+             .app {
+                 display: flex;
+                 flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                 a {
+                     img {
+                         max-width: 120px;
+                         height: 40px;
+                     }
+                 }
+             }
+
+             .copyRight {
+                 font-size: 15px;
+                 margin-top: 12px;
+             }
+         }
+     }
+
+     .card-info {
+         background-color: $whitColor;
+         padding: 44px;
+         width: 387px;
+         border-radius: 25px;
+         position: absolute;
+         inset-inline-end: 40px;
+         bottom: 40px;
+         transition: all .5s;
+         z-index: 99;
+        @media(max-width:767px) {
+            display: none;
+        }
+         .card-head {
+             h5 {
+                 font-size: 20px;
+                 font-family: ExoBold;
+                 color: $mainColor;
+                 margin-bottom: 9px;
+             }
+
+             p {
+                 font-size: 14px;
+                 font-family: ExoMedium;
+                 color: $blackColor;
+                 margin-bottom: 21px;
+             }
+
+         }
+
+         hr {
+             width: 63px;
+             height: 1px;
+             opacity: 1;
+             background-color: $blackColor ;
+
+         }
+
+         .card-body {
+             p {
+                 font-size: 15px;
+                 font-family: ExoMedium;
+                 line-height: 23.52px;
+                 padding: 0;
+             }
+         }
+
+         .card-foot {
+             display: flex;
+             align-items: center;
+             justify-content: end;
+
+             .btn-main {
+                 @extend .btn-main;
+                 font-size: 16px;
+                 padding: 12px 40px;
+
+                 &::after {
+                     display: none;
+                 }
+             }
+         }
+     }
+ }

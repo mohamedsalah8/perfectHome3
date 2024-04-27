@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="">
+   <meta name="keywords" content="">
+   <link rel="shortcut icon" href="assets/img/favico.png" type="image/x-icon">
+   <title>About - Perfect Home</title>
+   <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+
+<body>
+   <!-- header -->
+   <header class="header" id="header">
+      <nav class="navbar navbar-expand-lg py-0">
+         <div class="container-fluid align-items-end">
+            <a class="navbar-brand" href="index.html">
+               <img src="assets/img/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link active" href="about.html">About us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="support.html">Support</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">contact</a>
+                  </li>
+               </ul>
+               <div class=" ">
+                  <button class="btn btn-outline-expert">
+                     Expert Matter
+                  </button>
+               </div>
+            </div>
+         </div>
+      </nav>
+   </header>
+   <!-- hero about -->
+   <section class="about-hero">
+      <div class="container-fluid container-fluid1">
+         <div class="text-about">
+            <h1>
+               Helping you prepare <br>
+               for an smart future.
+            </h1>
+            <div class="d-flex ">
+               <p>
+                  Your perfect home <br />
+                  smart partner
+               </p>
+               <a href="#" class="explore">
+                  Explore
+                  <span>
+                     <svg width="18" hight="18" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path
+                           d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                     </svg>
+                  </span>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid">
+         <div class="about-hero-img">
+            <img src="assets/img/aboutImg.svg" alt="about img">
+         </div>
+      </div>
+   </section>
+   <!-- ourGoal -->
+   <section class="ourGoal">
+      <div class="container-fluid container-fluid1">
+         <div class="row">
+            <div class="col-lg-4  ">
+               <div class="ourGoal-title">
+                  <p>We move forward for a perfect future</p>
+               </div>
+            </div>
+            <div class="col-lg-7  offset-xl-1  ">
+               <div class="ourGoal-text">
+                  <h2>
+                     Our goal is to always point you in the right direction for the road ahead, and meet all your needs.
+                  </h2>
+                  <p>
+                     How we find the best solution.
+                  </p>
+               </div>
+            </div>
+         </div>
+         <!-- tabs -->
+         <div class="tab-about">
+            <div class="row ">
+               <div class="col-lg-4 col-md-12">
+                  <div class="image-container ">
+                     <img src="assets/img/listen.svg" alt="Image 1" id="tabImage">
+                  </div>
+               </div>
+               <div class="col-lg-7  offset-xl-1 col-md-12">
+                  <ul class="nav nav-tabs border-0 flex-column" id="myTabs" role="tablist">
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="tab1-tab" data-bs-toggle="tab" data-bs-target="#tab1"
+                           type="button" role="tab" aria-controls="tab1" aria-selected="true"
+                           onclick="changeTabContent('We listen carefully', `Our experienced team will listen carefully to your end users' requirements and what you are
+                           looking to achieve through the installation of control devices and systems.` , 'assets/img/listen.svg')">
+                           Listen
+                        </button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab2-tab" data-bs-toggle="tab" data-bs-target="#tab2" type="button"
+                           role="tab" aria-controls="tab2" aria-selected="false"
+                           onclick="changeTabContent('Tab 2 Content', 'This is the content for Tab 2.', 'assets/img/aboutResearch.svg')">
+                           Research</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tab3-tab" data-bs-toggle="tab" data-bs-target="#tab3" type="button"
+                           role="tab" aria-controls="tab3" aria-selected="false"
+                           onclick="changeTabContent('Tab 3 Content', 'This is the content for Tab 3.', 'assets/img/aboutDesign.svg')">
+                           Design</button>
+                     </li>
+                  </ul>
+                  <div class="tab-content" id="myTabsContent">
+                     <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                        <h3 class="tab-pane-title">We listen carefully</h3>
+                        <p class="tab-pane-desc">Our experienced team will listen carefully to your end users'
+                           requirements and what you are
+                           looking to achieve through the installation of control devices and systems.</p>
+                     </div>
+                     <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                        <h3 class="tab-pane-title">We do our research</h3>
+                        <p class="tab-pane-desc">Our team will conduct a full site visit and complete an electricity
+                           supply review to calculate capacity and available rooms.</p>
+                     </div>
+                     <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                        <h3 class="tab-pane-title">We create a scheme specifically for each client</h3>
+                        <p class="tab-pane-desc">Based on our conversations and site visits, we will create a layout
+                           design that meets the needs of your site and end users and work to improve your experience.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- ready  -->
+   <section class="ready-get-system">
+      <div class="container-fluid">
+         <div class="textReady">
+            <h2>Are you ready <br>
+               to get our smart systems?</h2>
+            <a href="#" class="btn btn-main btn-main-black  col-lg-2 col-md-12">
+               <span class="me-4">Contact us</span>
+               <span class="arow arow-black ">
+                  <svg width="18" height="16" viewBox="0 0 18 16" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M0.605661 8.91804C0.215137 8.52752 0.215137 7.89435 0.605661 7.50383L6.96962 1.13987C7.36015 0.749345 7.99331 0.749345 8.38384 1.13987C8.77436 1.53039 8.77436 2.16356 8.38384 2.55408L2.72698 8.21094L8.38384 13.8678C8.77436 14.2583 8.77436 14.8915 8.38384 15.282C7.99331 15.6725 7.36015 15.6725 6.96962 15.282L0.605661 8.91804ZM17.4922 9.21094H1.31277V7.21094H17.4922V9.21094Z"
+                        fill="#E99A00" />
+                  </svg></span>
+            </a>
+            <div class="textFooter">
+               <div class="row">
+                  <div class="col-lg-5 col-md-12">
+                     <div class="textSmart-title">
+                        <h3>Smart systems solutions for homes.</h3>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-12">
+                     <div class="textSmart-desc">
+                        <p>
+                           We'll listen to your needs, determine the best approach, and then create a custom smart home
+                           solution that works for you.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- footer -->
+   <footer class="footer">
+      <div class="  container-fluid">
+         <div class="top-footer">
+            <div class="row align-items-end">
+               <div class="col-lg-5 col-md-12">
+                  <div class="footer-logo">
+                     <img src="assets/img/logo.svg" alt="logo">
+                  </div>
+               </div>
+               <div class="col-lg-7 col-md-12">
+                  <div class="footer-title">
+                     <a href="mailto:enquiries@perfect-home.sa">enquiries@perfect-home.sa</a>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+         <div class="middle-footer">
+            <div class="row">
+               <div class="col-lg-5 col-md-12">
+                  <div class="footer-title">
+                     <h2>
+                        Experts in smart systems solutions
+                        For home and commercial real estate
+                        Buildings and public places.
+                     </h2>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-12">
+                  <div class="footer-title">
+                     <h3>Navigation</h3>
+                     <ul>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Terms</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-12">
+                  <div class="footer-title">
+                     <h3>Follow us</h3>
+                     <ul>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-2 col-md-12">
+                  <div class="footer-title">
+                     <div class="img-app">
+                        <a href="#">
+                           <img src="assets/img/appstore.svg" alt="app">
+                        </a>
+                     </div>
+                     <div class="img-app mt-3">
+                        <a href="#">
+                           <img src="assets/img/googleplay.svg" alt="app">
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="bottom-footer">
+               <div class="copyright">
+                  <p> Copyright © Perfect Home 2024 </p>
+               </div>
+               <div class="back-to-top">
+                  <a href="#header" class="btn-to-top d-inline-block">
+                     <span>
+                        <svg width="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                           <path
+                              d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                              fill="#fff" />
+                        
+                           </svg>
+                     </span>
+                     <span>Back to top</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+
+
+
+   <!-- js file -->
+
+   <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+   <script>
+      function changeTabContent(heading, paragraph, imageSrc) {
+         let tabContent = document.querySelector('.tab-content');
+         let contentHeading = tabContent.querySelector('h3');
+         let contentParagraph = tabContent.querySelector('p');
+         let tabImage = document.getElementById('tabImage');
+
+         contentHeading.textContent = heading;
+         contentParagraph.textContent = paragraph;
+         tabImage.src = imageSrc;
+      }
+   </script>
+</body>
+
+</html>

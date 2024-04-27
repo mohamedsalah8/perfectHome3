@@ -1,0 +1,58 @@
+.header {
+    padding: 32px 118px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    @media (max-width:1400px) {
+        padding: 32px 0;
+    }
+
+    .navbar-brand {
+        img {
+            max-width: 223px;
+            height: 90px;
+
+            @media (max-width:1024px) {
+                max-width: 150px;
+                height: auto;
+
+            }
+            @media (max-width:768px) {
+                max-width: 120px; 
+            }
+        }
+    }
+
+    .navbar-nav {
+        background-color: $whitColor;
+        gap: 1.4rem;
+        box-shadow: $boxShadow1;
+        border-radius: 36.12px;
+        padding: 10px 12px;
+
+        @media (max-width:1190px) {
+            gap: 1rem;
+        }
+
+        .nav-link {
+            font-family: ExoMedium;
+            text-transform: capitalize;
+            font-size: 16px;
+            padding: 1rem 2rem;
+            color: $blackColor;
+            text-wrap: nowrap;
+
+            @media (max-width:1190px) {
+                padding: 1rem;
+
+            }
+        }
+
+        .nav-link.active {
+            background-color: $mainColor;
+            color: $whitColor;
+            border-radius: 27px;
+        }
+
+    }
+}
