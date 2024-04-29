@@ -9,21 +9,29 @@
 
 
  @import "../css/fonts.css";
+
  .body {
-    background-color: $bg1;
+     background-color: $bg1;
  }
+
  .hero {
      padding: 171px 0 0 0;
-     height: auto;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+
      @media (max-width:1024px) {
          background-color: #eee;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
      }
+
      @media (max-width:992px) {
-        height: auto;
+         height: auto;
      }
+
      .title-hero h1 {
          font-size: 80px;
          font-family: ExoBlack;
@@ -31,10 +39,12 @@
          text-transform: capitalize;
          display: inline-block;
          position: relative;
-         @media (max-width:1366px) {
-            font-size: 70px;
 
-        }
+         @media (max-width:1366px) {
+             font-size: 70px;
+
+         }
+
          @media (max-width:1024px) {
              font-size: 70px;
          }
@@ -43,13 +53,18 @@
              font-size: 60px;
          }
 
-         span { 
+         @media (max-width:420px) {
+             font-size: 55px;
+         }
+
+         span {
              font-size: 102px;
 
              @media (max-width:1366px) {
-                font-size: 80px;
-    
-            }
+                 font-size: 80px;
+
+             }
+
              @media (max-width:1024px) {
                  font-size: 80px;
 
@@ -58,8 +73,12 @@
              @media (max-width:767px) {
                  font-size: 80px;
              }
-         } 
- 
+
+             @media (max-width:420px) {
+                 font-size: 65px;
+             }
+         }
+
          &::before {
              content: "";
              width: 3px;
@@ -187,6 +206,7 @@
              .imgHeader {
                  img {
                      max-width: 157px;
+
                      @media (max-width:1024px) {
                          max-width: 135px;
                      }
@@ -199,9 +219,10 @@
 
                  img {
                      max-width: 156px;
+
                      @media (max-width:1024px) {
-                        max-width: 100px;
-                    }
+                         max-width: 100px;
+                     }
                  }
              }
          }
@@ -222,7 +243,8 @@
                      @media (max-width:1024px) {
                          font-size: 14px;
                          padding: 15px;
-                      }
+                     }
+
                      &:hover {
                          background-color: $mainColor;
                      }
@@ -247,9 +269,10 @@
                      img {
                          max-width: 120px;
                          height: 40px;
+
                          @media (max-width:1024px) {
-                            max-width: 100px;
-                        }
+                             max-width: 100px;
+                         }
                      }
                  }
              }
@@ -267,53 +290,60 @@
          height: auto;
          overflow: auto;
          padding: 0;
+
          .offcanvas-header {
              display: flex;
              justify-content: space-around;
              align-items: center;
              flex-direction: row !important;
              gap: 5px;
+
              .imgHeader {
-                img {
-                    max-width: 100px;
-                }
+                 img {
+                     max-width: 100px;
+                 }
              }
-             .smallMap  {
-                img {
-                    max-width: 80px;
-                }
+
+             .smallMap {
+                 img {
+                     max-width: 80px;
+                 }
              }
          }
-         .offcanvas-body { 
-         .tabs {
-            .nav {
-                display: flex;
-                gap: 10px;
-                margin-top: 10px;
-                justify-content: center;
-                flex-direction: row !important;
-                .nav-link {
-                    font-size: 12px;
-                    padding: 10px;
-                }
-            }
+
+         .offcanvas-body {
+             .tabs {
+                 .nav {
+                     display: flex;
+                     gap: 10px;
+                     margin-top: 10px;
+                     justify-content: center;
+                     flex-direction: row !important;
+
+                     .nav-link {
+                         font-size: 12px;
+                         padding: 10px;
+                     }
+                 }
+             }
          }
-        }
-        .offcanvas-footer {
-            .app {
-                a {
-                    img {
-                        max-width: 80px;
-                        height: 33px;
-                    }
-                }
-                .copyRight {
-                    p {
-                        font-size: 12px;
-                    }
-                }
-            }
-        }
+
+         .offcanvas-footer {
+             .app {
+                 a {
+                     img {
+                         max-width: 80px;
+                         height: 33px;
+                     }
+                 }
+
+                 .copyRight {
+                     p {
+                         font-size: 12px;
+                     }
+                 }
+             }
+         }
 
      }
 

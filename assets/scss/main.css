@@ -1173,7 +1173,10 @@ svg rect {
 
 .hero {
   padding: 171px 0 0 0;
-  height: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (max-width: 1024px) {
   .hero {
@@ -1211,6 +1214,11 @@ svg rect {
     font-size: 60px;
   }
 }
+@media (max-width: 420px) {
+  .hero .title-hero h1 {
+    font-size: 55px;
+  }
+}
 .hero .title-hero h1 span {
   font-size: 102px;
 }
@@ -1227,6 +1235,11 @@ svg rect {
 @media (max-width: 767px) {
   .hero .title-hero h1 span {
     font-size: 80px;
+  }
+}
+@media (max-width: 420px) {
+  .hero .title-hero h1 span {
+    font-size: 65px;
   }
 }
 .hero .title-hero h1::before {
