@@ -31,10 +31,12 @@
          text-transform: capitalize;
          display: inline-block;
          position: relative;
+         @media (max-width:1366px) {
+            font-size: 70px;
 
+        }
          @media (max-width:1024px) {
              font-size: 70px;
-
          }
 
          @media (max-width:767px) {
@@ -44,6 +46,10 @@
          span { 
              font-size: 102px;
 
+             @media (max-width:1366px) {
+                font-size: 80px;
+    
+            }
              @media (max-width:1024px) {
                  font-size: 80px;
 
