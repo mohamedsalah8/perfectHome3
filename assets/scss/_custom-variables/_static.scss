@@ -33,6 +33,11 @@ body {
         padding: 15px 15px;
 
     }
+    @media (max-width:767px) {
+        font-size: 14px;
+        padding: 10px 15px;
+
+    }
     &:hover {
         color: $blackColor;
         border-color: $blackColor;
