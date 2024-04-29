@@ -1,0 +1,105 @@
+ .contact {
+     @extend .about-hero;
+     position: unset;
+     padding: 130px 0;
+
+     .container-fluid {
+         padding: 0 118px;
+         @media (max-width: 1024px) {
+            padding: 0 40px;
+        }
+         @media (max-width: 768px) {
+             padding: 0 40px;
+         }
+     }
+
+     .text-contact {
+         padding: 130px 0;
+
+         @media (max-width: 768px) {
+            padding: 70px 0  ;
+        }
+        h1 {
+            @media (max-width: 768px) {
+                font-size: 55px;
+            }
+            @media (max-width: 767px) {
+                font-size: 35px;
+            }
+        }
+     }
+
+     .contact-desc {
+         h2 {
+             font-size: 55px;
+             font-family: ExoSemiBold;
+             margin-bottom: 70px;
+            
+             @media (max-width: 1024px) {
+                 font-size: 40px;
+             }
+             @media (max-width: 767px) {
+                font-size: 25px;
+            }
+         }
+     }
+
+     .contact-img {
+         img {
+             max-width: 100%;
+         }
+     }
+
+     .contact-form {
+         padding: 0 40px;
+
+         @media (max-width: 768px) {
+             padding: 0 10px;
+         }
+
+         form {
+             width: 100%;
+             @media (max-width: 768px) {
+                margin-top: 35px;
+            }
+             label {
+                 font-size: 20px;
+                 font-family: ExoSemiBold;
+                 margin-bottom: 20px;
+                 color: $blackColor;
+                 @media (max-width: 1024px) {
+                    font-size: 18px;
+                 margin-bottom: 15px;
+
+                }
+             }
+
+             .form-control {
+                 width: 100%;
+                 height: 75px;
+                 border: 1px solid $grayColor300;
+                 border-radius: 5px;
+                 padding: 0 20px;
+                 margin-bottom: 22px !important;
+
+                 &:focus {
+                     outline: none;
+                     box-shadow:0 0 0 .25rem  $mainColor ;
+                     border: none;
+                 }
+             }
+             .btn-main {
+                padding-inline-start: 60px;
+                margin-top: 70px;
+             }
+         }
+     }
+ }
+ .form-control.invalid-input {
+    border: 1px solid red; /* تغيير لون الحدود ليصبح أحمر عند عدم صحة البيانات */
+}
+
+.error-message {
+    color: red; /* تغيير لون النص إلى أحمر */
+    display: none; /* عدم عرض رسالة الخطأ بشكل افتراضي */
+}

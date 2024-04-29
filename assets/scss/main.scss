@@ -4,15 +4,26 @@
  @import "_custom-variables/static";
  @import "_custom-variables/animation";
  @import "_components/about";
+ @import "_components/services";
+ @import "_components/contact";
+
 
  @import "../css/fonts.css";
-
+ .body {
+    background-color: $bg1;
+ }
  .hero {
-    padding: 171px 0 0 0;
-    height: 100vh;
-    //  @media (max-width:767px) {
-    //      padding: 40px 0;
-    //  }
+     padding: 171px 0 0 0;
+     height: auto;
+     @media (max-width:1024px) {
+         background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+     }
+     @media (max-width:992px) {
+        height: auto;
+     }
      .title-hero h1 {
          font-size: 80px;
          font-family: ExoBlack;
@@ -30,7 +41,7 @@
              font-size: 60px;
          }
 
-         span {
+         span { 
              font-size: 102px;
 
              @media (max-width:1024px) {
@@ -41,8 +52,8 @@
              @media (max-width:767px) {
                  font-size: 80px;
              }
-         }
-
+         } 
+ 
          &::before {
              content: "";
              width: 3px;
@@ -141,13 +152,15 @@
              p {
                  font-family: ExoMedium;
                  font-size: 17px;
+
                  @media (max-width:767px) {
-                    font-size: 14px;
+                     font-size: 14px;
                  }
+
                  br {
-                    @media (max-width:767px) {
-                        display: none;
-                     } 
+                     @media (max-width:767px) {
+                         display: none;
+                     }
                  }
              }
          }
@@ -168,6 +181,9 @@
              .imgHeader {
                  img {
                      max-width: 157px;
+                     @media (max-width:1024px) {
+                         max-width: 135px;
+                     }
                  }
              }
 
@@ -177,6 +193,9 @@
 
                  img {
                      max-width: 156px;
+                     @media (max-width:1024px) {
+                        max-width: 100px;
+                    }
                  }
              }
          }
@@ -194,6 +213,10 @@
                      transition: all .5s;
                      text-transform: capitalize;
 
+                     @media (max-width:1024px) {
+                         font-size: 14px;
+                         padding: 15px;
+                      }
                      &:hover {
                          background-color: $mainColor;
                      }
@@ -207,16 +230,20 @@
          }
 
          .offcanvas-footer {
-            
+
              .app {
                  display: flex;
                  flex-direction: column;
-                justify-content: center;
-                align-items: center;
+                 justify-content: center;
+                 align-items: center;
+
                  a {
                      img {
                          max-width: 120px;
                          height: 40px;
+                         @media (max-width:1024px) {
+                            max-width: 100px;
+                        }
                      }
                  }
              }
@@ -226,6 +253,62 @@
                  margin-top: 12px;
              }
          }
+
+     }
+
+     .offcanvas-bottom {
+         width: 100%;
+         height: auto;
+         overflow: auto;
+         padding: 0;
+         .offcanvas-header {
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             flex-direction: row !important;
+             gap: 5px;
+             .imgHeader {
+                img {
+                    max-width: 100px;
+                }
+             }
+             .smallMap  {
+                img {
+                    max-width: 80px;
+                }
+             }
+         }
+         .offcanvas-body { 
+         .tabs {
+            .nav {
+                display: flex;
+                gap: 10px;
+                margin-top: 10px;
+                justify-content: center;
+                flex-direction: row !important;
+                .nav-link {
+                    font-size: 12px;
+                    padding: 10px;
+                }
+            }
+         }
+        }
+        .offcanvas-footer {
+            .app {
+                a {
+                    img {
+                        max-width: 80px;
+                        height: 33px;
+                    }
+                }
+                .copyRight {
+                    p {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
      }
 
      .card-info {
@@ -238,9 +321,11 @@
          bottom: 40px;
          transition: all .5s;
          z-index: 99;
-        @media(max-width:767px) {
-            display: none;
-        }
+
+         @media(max-width:1024px) {
+             display: none;
+         }
+
          .card-head {
              h5 {
                  font-size: 20px;

@@ -1,0 +1,375 @@
+ .services-hero {
+     .btn-main {
+         padding-inline-start: 50px;
+         width: fit-content;
+     }
+ }
+
+
+ .identify {
+     padding: 150px 0;
+
+     @media (max-width: 1200px) {
+         padding: 50px 0;
+     }
+
+     .container-fluid {
+         padding: 0 115px;
+
+         @media (max-width: 1024px) {
+             padding: 0 40px;
+         }
+     }
+
+
+     .identify-title {
+         h2 {
+             font-family: ExoSemiBold;
+             font-size: 55px;
+             line-height: 1.2;
+             color: $blackColor;
+             margin-bottom: 48px;
+
+             @media (max-width: 1024px) {
+                 font-size: 30px;
+                 line-height: 1.2;
+                 margin-bottom: 15px;
+             }
+         }
+
+         a {
+             font-family: ExoMedium;
+             font-size: 25px;
+             line-height: 1.2;
+             color: $blackColor;
+             margin-bottom: 31px;
+             text-decoration: underline;
+             display: block;
+
+             @media (max-width: 1024px) {
+                 font-size: 18px;
+                 line-height: 1.2;
+                 margin-bottom: 15px;
+             }
+         }
+
+         p {
+             font-family: ExoMedium;
+             font-size: 25px;
+             line-height: 1.6;
+             color: $grayColor300;
+             margin-bottom: 50px;
+
+             @media (max-width: 1024px) {
+                 font-size: 18px;
+                 line-height: 1.2;
+                 margin-bottom: 15px;
+             }
+         }
+     }
+
+     .identify-img {
+         text-align: end;
+
+         img {
+             max-width: 600px;
+
+             @media (max-width: 768px) {
+                 max-width: 100%;
+             }
+         }
+     }
+ }
+
+ .products {
+     padding: 70px 0;
+
+     .container-fluid {
+         padding: 0 115px;
+
+         @media (max-width:1024px) {
+             padding: 0 40px;
+         }
+     }
+
+     .gap {
+         gap: 0;
+
+
+         @media (max-width: 768px) {
+             gap: 30px;
+         }
+     }
+
+     .products-title {
+         p {
+             font-size: 25px;
+             font-family: ExoSemiBold;
+             width: 440px;
+
+             @media (max-width: 1024px) {
+                 font-size: 18px;
+                 width: 100%;
+             }
+         }
+     }
+
+     .products-desc {
+         p {
+             font-size: 55px;
+             padding-inline-end: 30px;
+             font-family: ExoSemiBold;
+             line-height: 1.3;
+
+             @media (max-width: 1024px) {
+                 font-size: 18px;
+                 padding-inline-end: 0;
+
+             }
+         }
+     }
+
+     .slider {
+         .splide {
+             position: relative;
+             padding-bottom: 50px;
+
+             &::after {
+                 content: "";
+                 position: absolute;
+                 bottom: 0;
+                 left: 0;
+                 width: 97%;
+                 height: 2px;
+                 background-color: $blackColor;
+
+                 @media (max-width: 1024px) {
+                     width: 95%;
+
+                 }
+
+                 @media (max-width: 600px) {
+                     width: 90%;
+
+                 }
+             }
+
+             .splide__slide {
+                 .card {
+                     background-color: transparent;
+                     border: none;
+
+                     .imgCard {
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         background-color: #F5F5F5;
+                         border-radius: 29px;
+                         height: 693px;
+
+                         img {
+                             width: 300px;
+                             height: 360px;
+                         }
+                     }
+
+                     .card-body {
+                         padding: 20px 36px;
+
+                         h5 {
+                             font-family: ExoSemiBold;
+                             font-size: 25px;
+                             line-height: 1.2;
+                             color: $blackColor;
+                             margin-bottom: 10px;
+                         }
+
+                         p {
+                             font-family: ExoMedium;
+                             font-size: 25px;
+                             line-height: 1.6;
+                             color: $grayColor300;
+                             margin-bottom: 10px;
+
+                         }
+                     }
+                 }
+             }
+
+             .splide__arrows {
+                 position: absolute;
+                 bottom: 0;
+                 inset-inline-end: 0;
+
+                 .splide__arrow--prev {
+                     background-color: transparent;
+                     left: -2em;
+                     margin-inline-end: 5px;
+
+                     svg {
+                         transform: rotate(0deg);
+                     }
+
+                     @media (max-width: 1024px) {
+                         left: -2em;
+                     }
+                 }
+
+                 .splide__arrow--next {
+                     background-color: transparent;
+                     right: -2em;
+                 }
+
+                 .splide__arrow--prev--active {
+                     background-color: red;
+                 }
+
+             }
+         }
+     }
+
+ }
+
+ .lighting-solutions {
+     padding: 111px 0;
+
+     .lighting-solutions-img {
+         margin-bottom: 111px;
+     }
+
+     .lighting-solutions-title {
+         padding: 0 40px;
+
+         h2 {
+             font-family: ExoSemiBold;
+             font-size: 55px;
+             line-height: 1.2;
+             color: $blackColor;
+             margin-bottom: 48px;
+
+             @media (max-width: 1024px) {
+                 font-size: 45px;
+                 line-height: 1.2;
+                 margin-bottom: 15px;
+             }
+
+             @media (max-width: 600px) {
+                 font-size: 30px;
+                 line-height: 1.4;
+                 margin-bottom: 15px;
+             }
+         }
+
+         p {
+             font-family: ExoMedium;
+             font-size: 25px;
+             line-height: 1.6;
+             color: $blackColor;
+             margin-bottom: 70px;
+         }
+     }
+
+     .accordion {
+         margin: 0 40px;
+         border-radius: 0;
+
+         .accordion-item {
+             border: none;
+             border-bottom: 1px solid;
+             border-radius: 0;
+
+             &:first-of-type {
+                 border-top: 1px solid;
+             }
+
+             .accordion-header {
+                 border: none;
+
+                 .accordion-button {
+                     width: 100%;
+                     display: flex;
+                     align-items: center;
+                     justify-content: space-between;
+                     font-size: 41px;
+                     font-family: ExoRegular;
+                     padding: 40px 60px 40px 15px;
+
+                     @media (max-width: 1024px) {
+                         font-size: 25px;
+
+                     }
+
+                     @media (max-width: 767px) {
+                         font-size: 20px;
+                         padding: 15px 0;
+                     }
+
+                     &::after {
+                         content: "+";
+                         background-image: unset;
+                         margin-left: unset;
+                         font-size: 41px;
+                         width: 2rem;
+                         height: 2rem;
+                         transform: unset;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         background: $mainColor;
+                         color: $blackColor;
+                         border-radius: 50%;
+                     }
+
+
+
+                     .title {
+                         padding: 0 40px;
+                         width: 65%;
+
+                         @media (max-width: 1024px) {
+                             width: 100%;
+                         }
+
+                     }
+
+                     &:not(.collapsed) {
+                         background-color: $whitColor;
+                     }
+
+                     &:focus {
+                         box-shadow: none;
+                     }
+                 }
+
+                 .accordion-button[aria-expanded="true"]::after {
+                     content: "-";
+                 }
+             }
+
+             .accordion-body {
+                 display: flex;
+                 justify-content: center;
+
+                 p {
+                     font-family: ExoMedium;
+                     font-size: 25px;
+                     line-height: 1.6;
+                     color: $grayColor300;
+                     margin-bottom: 20px;
+                     width: 65%;
+                     padding: 0 40px;
+
+                     @media (max-width: 1024px) {
+                         width: 100%;
+                         font-size: 20px;
+
+                     }
+                     @media (max-width: 767px) {
+                        font-size: 18px;
+                     }
+                 }
+             }
+         }
+
+     }
+ }

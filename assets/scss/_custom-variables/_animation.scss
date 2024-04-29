@@ -26,6 +26,14 @@ svg rect {
 }
 .svgTransform {
     transform: translate(-35%, 10px) scale(1.1);
+
+    @media (max-width:1024px) {
+        transform: unset;
+    }
+    @media (max-width:992px) {
+        transform: translate(0%, -80%)  ;
+
+    }
 }
 
 .translevel1{

@@ -1,10 +1,26 @@
  .about-hero {
      padding: 170px 0 0 0;
-     background-image: url("../../../assets/img/bgAbout.svg");
-     background-size: 50% 100%;
-     background-position: right top;
-     background-repeat: no-repeat;
-
+    //  background-image: url("https://h.top4top.io/p_3039ioga01.png");
+    // //  background-image: url("../../img/bgabout.png");
+    //  background-size: 50% 100%;
+    //  background-position: right top;
+    //  background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url("https://h.top4top.io/p_3039ioga01.png");
+        background-size: 50% 100%;
+        background-position: right;
+        background-repeat: no-repeat;
+        position: absolute;
+        inset-inline-end: 0;
+        top: 0;
+        right: 0; 
+       z-index: -1;
+    }
      @media (max-width: 768px) {
          padding: 100px 0 0 0;
 
@@ -432,6 +448,9 @@
                  color: $blackColor;
                  text-decoration: none;
 
+                 @media (max-width:1024px) {
+                    font-size: 30px;  
+                }
                  @media (max-width:767px) {
                      font-size: 25px;
                      line-height: 1.2;
@@ -461,7 +480,7 @@
                  @extend h3;
                  width: 436px;
 
-                 @media (max-width:767px) {
+                 @media (max-width:1024px) {
                      width: auto;
                  }
 
