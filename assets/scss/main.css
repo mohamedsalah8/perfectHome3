@@ -6,11 +6,16 @@
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 99;
+  z-index: 9999;
 }
 @media (max-width: 1400px) {
   .header {
     padding: 32px 0;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 12px 0;
   }
 }
 .header .navbar-brand img {
@@ -45,6 +50,12 @@
     gap: 1rem;
   }
 }
+@media (max-width: 992px) {
+  .header .navbar-nav {
+    box-shadow: none;
+    border-radius: 0;
+  }
+}
 .header .navbar-nav .nav-link {
   font-family: ExoMedium;
   text-transform: capitalize;
@@ -62,6 +73,14 @@
   background-color: #E99A00;
   color: #fff;
   border-radius: 27px;
+}
+@media (max-width: 992px) {
+  .header .navbar-collapse {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.0509803922);
+    border-radius: 36.12px;
+    padding: 10px 12px;
+  }
 }
 
 img {
@@ -169,8 +188,11 @@ body {
   opacity: 0;
   visibility: hidden !important;
   transform: translateX(-20%);
-  transition: all 0.5s ease-in-out;
-  visibility: hidden;
+  transition: visibility 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .transformLevel {
@@ -179,6 +201,11 @@ body {
 
 #svg {
   transition: all 0.5s;
+}
+@media (max-width: 767px) {
+  #svg {
+    margin: 30px 0;
+  }
 }
 
 svg rect {
@@ -195,7 +222,7 @@ svg rect {
 }
 @media (max-width: 992px) {
   .svgTransform {
-    transform: translate(0%, -80%);
+    transform: translate(0%, 20px);
   }
 }
 
@@ -1191,6 +1218,11 @@ svg rect {
     height: auto;
   }
 }
+@media (max-width: 767px) {
+  .hero {
+    padding: 100px 0;
+  }
+}
 .hero .title-hero h1 {
   font-size: 80px;
   font-family: ExoBlack;
@@ -1207,16 +1239,13 @@ svg rect {
 @media (max-width: 1024px) {
   .hero .title-hero h1 {
     font-size: 70px;
+    line-height: 1.1;
   }
 }
 @media (max-width: 767px) {
   .hero .title-hero h1 {
-    font-size: 60px;
-  }
-}
-@media (max-width: 420px) {
-  .hero .title-hero h1 {
-    font-size: 55px;
+    font-size: 45px;
+    margin: 40px 0;
   }
 }
 .hero .title-hero h1 span {
@@ -1234,12 +1263,7 @@ svg rect {
 }
 @media (max-width: 767px) {
   .hero .title-hero h1 span {
-    font-size: 80px;
-  }
-}
-@media (max-width: 420px) {
-  .hero .title-hero h1 span {
-    font-size: 65px;
+    font-size: 55px;
   }
 }
 .hero .title-hero h1::before {
@@ -1271,6 +1295,17 @@ svg rect {
 @media (max-width: 767px) {
   .hero .desc-hero {
     font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .hero .btn-main, .hero .card-info .card-foot .btn-main {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero .btn-main .arow, .hero .card-info .card-foot .btn-main .arow {
+    width: 50px;
+    height: 50px;
   }
 }
 .hero .footerHero {
@@ -1307,9 +1342,20 @@ svg rect {
   max-width: 135px;
   height: 45px;
 }
+@media (max-width: 767px) {
+  .hero .footerHero .app .downloadApp a img {
+    max-width: 120px;
+    height: 38px;
+  }
+}
 .hero .footerHero .app .copyRight p {
   font-size: 15px;
   margin-top: 12px;
+}
+@media (max-width: 767px) {
+  .hero .footerHero .app .copyRight p {
+    font-size: 12px;
+  }
 }
 .hero .footerHero .discover {
   display: flex;
@@ -1355,9 +1401,19 @@ svg rect {
     max-width: 135px;
   }
 }
+@media (max-width: 767px) {
+  .hero .offcanvas .offcanvas-header .imgHeader img {
+    display: none;
+  }
+}
 .hero .offcanvas .offcanvas-header .smallMap {
   margin-top: 42px;
   cursor: pointer;
+}
+@media (max-width: 767px) {
+  .hero .offcanvas .offcanvas-header .smallMap {
+    margin-top: 8px;
+  }
 }
 .hero .offcanvas .offcanvas-header .smallMap img {
   max-width: 156px;
@@ -1423,11 +1479,28 @@ svg rect {
   flex-direction: row !important;
   gap: 5px;
 }
+@media (max-width: 767px) {
+  .hero .offcanvas-bottom .offcanvas-header {
+    justify-content: center;
+    gap: 0;
+    padding: 0;
+  }
+}
 .hero .offcanvas-bottom .offcanvas-header .imgHeader img {
   max-width: 100px;
 }
 .hero .offcanvas-bottom .offcanvas-header .smallMap img {
   max-width: 80px;
+}
+@media (max-width: 767px) {
+  .hero .offcanvas-bottom .offcanvas-body {
+    padding: 0;
+  }
+}
+@media (max-width: 767px) {
+  .hero .offcanvas-bottom .offcanvas-body .me-3 {
+    margin: 0 !important;
+  }
 }
 .hero .offcanvas-bottom .offcanvas-body .tabs .nav {
   display: flex;
@@ -1435,6 +1508,12 @@ svg rect {
   margin-top: 10px;
   justify-content: center;
   flex-direction: row !important;
+}
+@media (max-width: 767px) {
+  .hero .offcanvas-bottom .offcanvas-body .tabs .nav {
+    margin-top: 10px !important;
+    gap: 4px;
+  }
 }
 .hero .offcanvas-bottom .offcanvas-body .tabs .nav .nav-link {
   font-size: 12px;

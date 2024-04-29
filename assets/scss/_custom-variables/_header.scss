@@ -3,25 +3,33 @@
     position: absolute;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: 9999;
+
     @media (max-width:1400px) {
         padding: 32px 0;
+    }
+    @media (max-width:767px) {
+        padding: 12px 0;
+         
     }
     .navbar-brand {
         img {
             max-width: 223px;
             height: 90px;
+
             @media (max-width:1366px) {
                 max-width: 180px;
-    
+
             }
+
             @media (max-width:1024px) {
                 max-width: 150px;
                 height: auto;
 
             }
+
             @media (max-width:768px) {
-                max-width: 120px; 
+                max-width: 120px;
             }
         }
     }
@@ -35,6 +43,11 @@
 
         @media (max-width:1190px) {
             gap: 1rem;
+        }
+
+        @media (max-width:992px) {
+            box-shadow: none;
+            border-radius: 0;
         }
 
         .nav-link {
@@ -57,5 +70,14 @@
             border-radius: 27px;
         }
 
+    }
+
+    .navbar-collapse {
+        @media (max-width:992px) {
+            background-color: $whitColor;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.0509803922);
+            border-radius: 36.12px;
+            padding: 10px 12px;
+        }
     }
 }

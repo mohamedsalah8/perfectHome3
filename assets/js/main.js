@@ -25,7 +25,8 @@ let smartLightElements = svg.querySelectorAll(".smartLight");
 
 let smartCurtainsElements = svg.querySelectorAll(".smartCurtains");
 let otherElementsCurtains = svg.querySelectorAll("rect:not(.smartCurtainsParent)");
-
+// hero
+let hero = document.getElementById("hero");
 
 // Constants
 const classes = ['translevel1', 'translevel2', 'translevel3', 'translevel4', 'translevel5', 'translevel6'];
@@ -230,3 +231,25 @@ function resetFill() {
     });
 
 }
+
+// staticBackdrop 
+
+window.addEventListener('resize', function () {
+   var body = document.querySelector('body');
+   var windowWidth = window.innerWidth;
+   var  staticBackdrop = document.getElementById("staticBackdrop")
+   if (windowWidth < 992) {
+      body.classList.add('small-screen');
+      staticBackdrop.classList.replace('offcanvas-start', 'offcanvas-bottom') ;
+      startJourny.addEventListener("click", function () {
+        hero.classList.add("pt-5")
+      })
+   } else {
+      body.classList.remove('small-screen');
+      staticBackdrop.classList.replace('offcanvas-bottom', 'offcanvas-start')
+      hero.classList.remove("pt-5")
+
+   }
+});
+
+ window.dispatchEvent(new Event('resize'));

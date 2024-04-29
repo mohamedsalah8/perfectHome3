@@ -52,7 +52,7 @@
       </nav>
    </header>
    <!-- hero -->
-   <section class="hero">
+   <section class="hero" id="hero">
       <div class="container">
          <div class="row d-flex align-items-center">
             <div class="col-lg-5 journy showText" id="journy">
@@ -293,22 +293,7 @@
    <script src="assets/js/main.js"></script>
 
    <script>
-      window.addEventListener('resize', function () {
-         var body = document.querySelector('body');
-         var windowWidth = window.innerWidth;
-         var  staticBackdrop = document.getElementById("staticBackdrop")
-         if (windowWidth < 992) {
-            body.classList.add('small-screen');
-            staticBackdrop.classList.replace('offcanvas-start', 'offcanvas-bottom')
-         } else {
-            body.classList.remove('small-screen');
-            staticBackdrop.classList.replace('offcanvas-bottom', 'offcanvas-start')
-
-         }
-      });
-
-      // تشغيل الكود عند التحميل الأولي للصفحة
-      window.dispatchEvent(new Event('resize'));
+     
    </script>
 </body>
 

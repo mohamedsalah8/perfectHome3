@@ -32,6 +32,10 @@
          height: auto;
      }
 
+     @media (max-width:767px) {
+         padding: 100px 0;
+     }
+
      .title-hero h1 {
          font-size: 80px;
          font-family: ExoBlack;
@@ -47,14 +51,14 @@
 
          @media (max-width:1024px) {
              font-size: 70px;
+             line-height: 1.1;
+
          }
+
 
          @media (max-width:767px) {
-             font-size: 60px;
-         }
-
-         @media (max-width:420px) {
-             font-size: 55px;
+             font-size: 45px;
+             margin: 40px 0;
          }
 
          span {
@@ -62,20 +66,14 @@
 
              @media (max-width:1366px) {
                  font-size: 80px;
-
              }
 
              @media (max-width:1024px) {
                  font-size: 80px;
-
              }
 
              @media (max-width:767px) {
-                 font-size: 80px;
-             }
-
-             @media (max-width:420px) {
-                 font-size: 65px;
+                 font-size: 55px;
              }
          }
 
@@ -118,6 +116,19 @@
          }
      }
 
+     .btn-main {
+         @media (max-width:767px) {
+             font-size: 18px;
+         }
+
+         .arow {
+             @media (max-width:1024px) {
+                 width: 50px;
+                 height: 50px;
+             }
+         }
+     }
+
      .footerHero {
          padding: 10px 118px;
 
@@ -151,6 +162,11 @@
                      img {
                          max-width: 135px;
                          height: 45px;
+
+                         @media (max-width:767px) {
+                             max-width: 120px;
+                             height: 38px;
+                         }
                      }
                  }
              }
@@ -159,6 +175,11 @@
                  p {
                      font-size: 15px;
                      margin-top: 12px;
+
+                     @media (max-width:767px) {
+                        font-size: 12px;
+
+                     }
                  }
              }
          }
@@ -203,6 +224,8 @@
              flex-direction: column;
              gap: 5px;
 
+
+
              .imgHeader {
                  img {
                      max-width: 157px;
@@ -210,21 +233,30 @@
                      @media (max-width:1024px) {
                          max-width: 135px;
                      }
+
+                     @media (max-width:767px) {
+                         display: none;
+                     }
                  }
              }
 
              .smallMap {
                  margin-top: 42px;
                  cursor: pointer;
-
+                 @media (max-width:767px) {
+                    margin-top: 8px; 
+                }
                  img {
                      max-width: 156px;
 
                      @media (max-width:1024px) {
                          max-width: 100px;
                      }
+                    
                  }
              }
+
+
          }
 
          .offcanvas-body {
@@ -298,6 +330,12 @@
              flex-direction: row !important;
              gap: 5px;
 
+             @media (max-width:767px) {
+                 justify-content: center;
+                 gap: 0;
+                 padding: 0;
+             }
+
              .imgHeader {
                  img {
                      max-width: 100px;
@@ -312,6 +350,18 @@
          }
 
          .offcanvas-body {
+             @media (max-width:767px) {
+                 padding: 0;
+
+             }
+
+             .me-3 {
+                 @media (max-width:767px) {
+                     margin: 0 !important;
+
+                 }
+             }
+
              .tabs {
                  .nav {
                      display: flex;
@@ -319,6 +369,12 @@
                      margin-top: 10px;
                      justify-content: center;
                      flex-direction: row !important;
+
+                     @media (max-width:767px) {
+                         margin-top: 10px !important;
+
+                         gap: 4px;
+                     }
 
                      .nav-link {
                          font-size: 12px;
