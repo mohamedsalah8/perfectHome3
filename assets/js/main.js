@@ -241,13 +241,16 @@ window.addEventListener('resize', function () {
    if (windowWidth < 992) {
       body.classList.add('small-screen');
       staticBackdrop.classList.replace('offcanvas-start', 'offcanvas-bottom') ;
-      startJourny.addEventListener("click", function () {
+      startJourny.addEventListener("click", function () { 
         hero.classList.add("pt-5")
+      })
+      showJourny.addEventListener("click", function () {
+        hero.classList.remove("pt-5")
       })
    } else {
       body.classList.remove('small-screen');
       staticBackdrop.classList.replace('offcanvas-bottom', 'offcanvas-start')
-      hero.classList.remove("pt-5")
+      
 
    }
 });
