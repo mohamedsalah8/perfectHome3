@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import "bootstrap.min.css";
 @import "../css/fonts.css";
 .header {
@@ -279,7 +278,7 @@ svg rect {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("https://h.top4top.io/p_3039ioga01.png");
+  background-image: url("../../../assets/img/bgAbout.svg");
   background-size: 50% 100%;
   background-position: right;
   background-repeat: no-repeat;
@@ -288,6 +287,11 @@ svg rect {
   top: 0;
   right: 0;
   z-index: -1;
+}
+@media (max-width: 767px) {
+  .about-hero::after, .contact::after {
+    background-size: 100% 100%;
+  }
 }
 @media (max-width: 768px) {
   .about-hero, .contact {
@@ -324,13 +328,13 @@ svg rect {
 @media (max-width: 768px) {
   .about-hero .text-about h1, .contact .text-about h1 {
     font-size: 60px;
-    margin-top: 15px;
+    margin: 100px 0;
   }
 }
 @media (max-width: 767px) {
   .about-hero .text-about h1, .contact .text-about h1 {
     font-size: 45px;
-    margin-top: 15px;
+    margin: 100px 0;
   }
 }
 @media (max-width: 767px) {
@@ -395,12 +399,17 @@ svg rect {
   }
 }
 
-.container-fluid1 {
+.container-fluid {
   padding: 0 120px;
 }
 @media (max-width: 1024px) {
-  .container-fluid1 {
+  .container-fluid {
     padding: 0 40px;
+  }
+}
+@media (max-width: 1024px) {
+  .container-fluid {
+    padding: 0 15px;
   }
 }
 
@@ -574,7 +583,7 @@ svg rect {
   content: "";
   width: 100%;
   height: 100%;
-  background-image: url("https://b.top4top.io/p_3036zwyfz1.png");
+  background-image: url("../../../assets/img/bgReady.png");
   background-size: 50% 100%;
   background-position: right;
   background-repeat: no-repeat;
@@ -780,6 +789,16 @@ svg rect {
   width: -moz-fit-content;
   width: fit-content;
 }
+@media (max-width: 767px) {
+  .services-hero .text-explor p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .services-hero .text-explor p br {
+    display: none;
+  }
+}
 
 .identify {
   padding: 150px 0;
@@ -811,6 +830,11 @@ svg rect {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 767px) {
+  .identify .identify-title h2 {
+    font-size: 20px;
+  }
+}
 .identify .identify-title a {
   font-family: ExoMedium;
   font-size: 25px;
@@ -839,6 +863,11 @@ svg rect {
     font-size: 18px;
     line-height: 1.2;
     margin-bottom: 15px;
+  }
+}
+@media (max-width: 1024px) {
+  .identify .identify-title p {
+    font-size: 16px;
   }
 }
 .identify .identify-img {
@@ -918,6 +947,11 @@ svg rect {
     width: 90%;
   }
 }
+@media (max-width: 767px) {
+  .products .slider .splide .gap-4 {
+    gap: 1rem !important;
+  }
+}
 .products .slider .splide .splide__slide .card {
   background-color: transparent;
   border: none;
@@ -930,9 +964,20 @@ svg rect {
   border-radius: 29px;
   height: 693px;
 }
+@media (max-width: 767px) {
+  .products .slider .splide .splide__slide .card .imgCard {
+    height: auto;
+  }
+}
 .products .slider .splide .splide__slide .card .imgCard img {
   width: 300px;
   height: 360px;
+}
+@media (max-width: 767px) {
+  .products .slider .splide .splide__slide .card .imgCard img {
+    width: 200px;
+    height: 360px;
+  }
 }
 .products .slider .splide .splide__slide .card .card-body {
   padding: 20px 36px;
@@ -944,12 +989,22 @@ svg rect {
   color: #000;
   margin-bottom: 10px;
 }
+@media (max-width: 767px) {
+  .products .slider .splide .splide__slide .card .card-body h5 {
+    font-size: 18px;
+  }
+}
 .products .slider .splide .splide__slide .card .card-body p {
   font-family: ExoMedium;
   font-size: 25px;
   line-height: 1.6;
   color: rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .products .slider .splide .splide__slide .card .card-body p {
+    font-size: 16px;
+  }
 }
 .products .slider .splide .splide__arrows {
   position: absolute;
@@ -980,8 +1035,18 @@ svg rect {
 .lighting-solutions {
   padding: 111px 0;
 }
+@media (max-width: 767px) {
+  .lighting-solutions {
+    padding: 0px 0;
+  }
+}
 .lighting-solutions .lighting-solutions-img {
   margin-bottom: 111px;
+}
+@media (max-width: 767px) {
+  .lighting-solutions .lighting-solutions-img {
+    margin-bottom: 50px;
+  }
 }
 .lighting-solutions .lighting-solutions-title {
   padding: 0 40px;
@@ -1000,9 +1065,9 @@ svg rect {
     margin-bottom: 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 767px) {
   .lighting-solutions .lighting-solutions-title h2 {
-    font-size: 30px;
+    font-size: 22px;
     line-height: 1.4;
     margin-bottom: 15px;
   }
@@ -1014,9 +1079,19 @@ svg rect {
   color: #000;
   margin-bottom: 70px;
 }
+@media (max-width: 767px) {
+  .lighting-solutions .lighting-solutions-title p {
+    font-size: 16px;
+  }
+}
 .lighting-solutions .accordion {
   margin: 0 40px;
   border-radius: 0;
+}
+@media (max-width: 767px) {
+  .lighting-solutions .accordion {
+    margin: 0;
+  }
 }
 .lighting-solutions .accordion .accordion-item {
   border: none;
@@ -1045,8 +1120,8 @@ svg rect {
 }
 @media (max-width: 767px) {
   .lighting-solutions .accordion .accordion-item .accordion-header .accordion-button {
-    font-size: 20px;
-    padding: 15px 0;
+    font-size: 18px;
+    padding: 10px 0;
   }
 }
 .lighting-solutions .accordion .accordion-item .accordion-header .accordion-button::after {
@@ -1071,6 +1146,11 @@ svg rect {
 @media (max-width: 1024px) {
   .lighting-solutions .accordion .accordion-item .accordion-header .accordion-button .title {
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .lighting-solutions .accordion .accordion-item .accordion-header .accordion-button .title {
+    padding: 0 10px;
   }
 }
 .lighting-solutions .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
@@ -1104,6 +1184,7 @@ svg rect {
 @media (max-width: 767px) {
   .lighting-solutions .accordion .accordion-item .accordion-body p {
     font-size: 18px;
+    padding: 0 10px;
   }
 }
 
@@ -1129,7 +1210,7 @@ svg rect {
 }
 @media (max-width: 768px) {
   .contact .text-contact {
-    padding: 70px 0;
+    padding: 0;
   }
 }
 @media (max-width: 768px) {
@@ -1188,6 +1269,12 @@ svg rect {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 767px) {
+  .contact .contact-form form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
 .contact .contact-form form .form-control {
   width: 100%;
   height: 75px;
@@ -1201,18 +1288,28 @@ svg rect {
   box-shadow: 0 0 0 0.25rem #E99A00;
   border: none;
 }
+@media (max-width: 767px) {
+  .contact .contact-form form .form-control {
+    height: 58px;
+  }
+}
 .contact .contact-form form .btn-main, .contact .contact-form form .hero .card-info .card-foot .btn-main, .hero .card-info .card-foot .contact .contact-form form .btn-main {
   padding-inline-start: 60px;
   margin-top: 70px;
 }
+@media (max-width: 767px) {
+  .contact .contact-form form .btn-main, .contact .contact-form form .hero .card-info .card-foot .btn-main, .hero .card-info .card-foot .contact .contact-form form .btn-main {
+    font-size: 16px;
+  }
+}
 
 .form-control.invalid-input {
-  border: 1px solid red; /* تغيير لون الحدود ليصبح أحمر عند عدم صحة البيانات */
+  border: 1px solid red;
 }
 
 .error-message {
-  color: red; /* تغيير لون النص إلى أحمر */
-  display: none; /* عدم عرض رسالة الخطأ بشكل افتراضي */
+  color: red;
+  display: none;
 }
 
 .body {
@@ -1241,7 +1338,7 @@ svg rect {
 }
 @media (max-width: 767px) {
   .hero {
-    padding: 100px 0;
+    padding: 100px 0 25px 0;
   }
 }
 .hero .title-hero h1 {
