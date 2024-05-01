@@ -33,7 +33,7 @@ const classes = ['translevel1', 'translevel2', 'translevel3', 'translevel4', 'tr
 
 // Event Listeners
 startJourny.addEventListener("click", () => {
-    for (let i = 0; i < journy.length; i++) {
+    for (let i = 0; i < cardinfo.length; i++) {
         cardinfo[i].classList.replace('hideText', 'showText');
     }
     svg.classList.add('svgTransform');
@@ -52,8 +52,8 @@ showJourny.addEventListener("click", () => {
     for (let i = 0; i < journy.length; i++) {
         journy[i].classList.replace('hideText', 'showText');
     }
-     for (let i = 0; i < journy.length; i++) {
-        cardinfo.classList.replace('showText', 'hideText');
+     for (let i = 0; i < cardinfo.length; i++) {
+        cardinfo[i].classList.replace('showText', 'hideText');
 
     }
     svg.classList.remove('svgTransform');
