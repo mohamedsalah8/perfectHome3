@@ -5,7 +5,7 @@
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 99;
 }
 @media (max-width: 1400px) {
   .header {
@@ -203,11 +203,15 @@ body {
   opacity: 0;
   visibility: hidden !important;
   transform: translateX(-20%);
-  transition: visibility 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 767px) {
+  .hideText {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 .transformLevel {
@@ -229,11 +233,6 @@ svg rect {
 
 .svgTransform {
   transform: translate(-35%, 10px) scale(1.1);
-}
-@media (max-width: 1024px) {
-  .svgTransform {
-    transform: unset;
-  }
 }
 @media (max-width: 992px) {
   .svgTransform {
