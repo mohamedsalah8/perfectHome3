@@ -198,21 +198,22 @@
                <div class="tabs">
                   <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
                      aria-orientation="vertical">
-                     <button class="nav-link active" id="CCTV" data-bs-toggle="pill" type="button" role="tab"
-                        aria-selected="false">CCTV System </button>
+                     <button class="nav-link active" id="CCTV" data-bs-toggle="pill" data-bs-target="#v-pills-home"
+                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">CCTV System </button>
 
-                     <button class="nav-link" id="smartGarage" data-bs-toggle="pill" type="button" role="tab"
-                        aria-selected="false">smart Garage door</button>
+                     <button class="nav-link" id="smartGarage" data-bs-toggle="pill" data-bs-target="#pills-smartGarage"
+                        type="button" role="tab" aria-controls="pills-smartGarage" aria-selected="false">smart Garage
+                        door</button>
 
 
-                     <button class="nav-link" id="energy" data-bs-toggle="pill" type="button" role="tab"
-                        aria-selected="false">Energy consumption</button>
+                     <button class="nav-link" id="energy" data-bs-toggle="pill" data-bs-target="#pills-energy"
+                        type="button" role="tab" aria-controls="pills-energy" aria-selected="false">Energy
+                        consumption</button>
 
                      <button class="nav-link" id="smartCurtains" data-bs-toggle="pill" type="button" role="tab"
                         aria-selected="false">Smart Curtains</button>
 
-                     <button class="nav-link " id="smartLight" data-bs-toggle="pill" data-bs-target="#v-pills-home"
-                        type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Smart
+                     <button class="nav-link " id="smartLight">Smart
                         Lighting</button>
 
 
@@ -236,7 +237,7 @@
 
                </div>
             </div>
-         </aside>         <!-- end sidebar -->
+         </aside> <!-- end sidebar -->
       </div>
       <div class="footerHero journy">
          <div class="container-fluid">
@@ -269,7 +270,68 @@
          </div>
       </div>
       <!-- card info -->
-      <div class="card-info hideText" id="card-info">
+      <div class="tab-content" id="pills-tabContent">
+         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="CCTV" tabindex="0">
+            <div class="card-info hideText" id="card-info">
+               <div class="card-head">
+                  <h5>1 Smart Lighting</h5>
+                  <p>Control systems</p>
+               </div>
+               <hr />
+               <div class="card-body">
+                  <p>
+                     Monitor your entire space easily with integrated security systems - we offer you the latest systems
+                     for
+                     monitoring and protecting the privacy of your home....
+                  </p>
+               </div>
+               <div class="card-foot">
+                  <a href="#" class="btn-main">More Details</a>
+               </div>
+            </div>
+         </div>
+         <div class="tab-pane fade" id="pills-smartGarage" role="tabpanel" aria-labelledby="smartGarage" tabindex="0">
+            <div class="card-info hideText" id="card-info">
+               <div class="card-head">
+                  <h5>2 Smart Lighting</h5>
+                  <p>Control systems</p>
+               </div>
+               <hr />
+               <div class="card-body">
+                  <p>
+                     Monitor your entire space easily with integrated security systems - we offer you the latest systems
+                     for
+                     monitoring and protecting the privacy of your home....
+                  </p>
+               </div>
+               <div class="card-foot">
+                  <a href="#" class="btn-main">More Details</a>
+               </div>
+            </div>
+         </div>
+         <div class="tab-pane fade" id="pills-energy" role="tabpanel" 
+         aria-labelledby="energy" tabindex="0">
+            <div class="card-info hideText" id="card-info">
+               <div class="card-head">
+                  <h5>3 Smart Lighting</h5>
+                  <p>Control systems</p>
+               </div>
+               <hr />
+               <div class="card-body">
+                  <p>
+                     Monitor your entire space easily with integrated security systems - we offer you the latest systems
+                     for
+                     monitoring and protecting the privacy of your home....
+                  </p>
+               </div>
+               <div class="card-foot">
+                  <a href="#" class="btn-main">More Details</a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <!-- <div class="card-info hideText" id="card-info">
          <div class="card-head">
             <h5>Smart Lighting</h5>
             <p>Control systems</p>
@@ -284,7 +346,7 @@
          <div class="card-foot">
             <a href="#" class="btn-main">More Details</a>
          </div>
-      </div>
+      </div> -->
 
    </section>
 
@@ -293,7 +355,7 @@
    <script src="assets/js/main.js"></script>
 
    <script>
-     
+
    </script>
 </body>
 

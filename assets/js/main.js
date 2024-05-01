@@ -2,7 +2,7 @@ let startJourny = document.getElementById("startJourny");
 let showJourny = document.getElementById("showJourny");
 let cctv = document.getElementById("CCTV");
 let journy = document.querySelectorAll(".journy");
-let cardinfo = document.getElementById("card-info");
+let cardinfo = document.querySelectorAll(".card-info");
 let svg = document.getElementById("svg");
 let smartGarage = document.getElementById("smartGarage");
 let energy = document.getElementById("energy");
@@ -21,7 +21,7 @@ let smartEnergy = svg.querySelectorAll(".smartEnergy");
 let otherElements3 = svg.querySelectorAll("rect:not(.smartEnergy):not(.garage)");
 
 let smartLightElements = svg.querySelectorAll(".smartLight");
- let otherElementsSmartLight = svg.querySelectorAll("rect:not(.smartLightRect)");
+let otherElementsSmartLight = svg.querySelectorAll("rect:not(.smartLightRect)");
 
 let smartCurtainsElements = svg.querySelectorAll(".smartCurtains");
 let otherElementsCurtains = svg.querySelectorAll("rect:not(.smartCurtainsParent)");
@@ -33,7 +33,9 @@ const classes = ['translevel1', 'translevel2', 'translevel3', 'translevel4', 'tr
 
 // Event Listeners
 startJourny.addEventListener("click", () => {
-    cardinfo.classList.replace('hideText', 'showText');
+    for (let i = 0; i < journy.length; i++) {
+        cardinfo[i].classList.replace('hideText', 'showText');
+    }
     svg.classList.add('svgTransform');
 
     for (let i = 0; i < journy.length; i++) {
@@ -50,7 +52,10 @@ showJourny.addEventListener("click", () => {
     for (let i = 0; i < journy.length; i++) {
         journy[i].classList.replace('hideText', 'showText');
     }
-    cardinfo.classList.replace('showText', 'hideText');
+     for (let i = 0; i < journy.length; i++) {
+        cardinfo.classList.replace('showText', 'hideText');
+
+    }
     svg.classList.remove('svgTransform');
     resetFill();
 });
@@ -77,7 +82,7 @@ energy.addEventListener("click", () => {
     resetCurtains()
     resetCam()
     resetSmartLight()
-     highlightSmartEnergy();
+    highlightSmartEnergy();
     highlightGrage();
 });
 smartCurtains.addEventListener("click", () => {
@@ -196,7 +201,7 @@ function highlighSmartLight() {
         element.setAttribute("stroke", "#E99A00");
         element.setAttribute("stroke-width", "3");
         element.setAttribute("rx", "48");
- 
+
         otherElementsSmartLight.forEach(function (element) {
             element.setAttribute("opacity", "0.5");
         });
@@ -235,24 +240,21 @@ function resetFill() {
 // staticBackdrop 
 
 window.addEventListener('resize', function () {
-   var body = document.querySelector('body');
-   var windowWidth = window.innerWidth;
-   var  staticBackdrop = document.getElementById("staticBackdrop")
-   if (windowWidth < 992) {
-      body.classList.add('small-screen');
-      staticBackdrop.classList.replace('offcanvas-start', 'offcanvas-bottom') ;
-      startJourny.addEventListener("click", function () { 
-        hero.classList.add("pt-5")
-      })
-      showJourny.addEventListener("click", function () {
-        hero.classList.remove("pt-5")
-      })
-   } else {
-      body.classList.remove('small-screen');
-      staticBackdrop.classList.replace('offcanvas-bottom', 'offcanvas-start')
-      
+    var body = document.querySelector('body');
+    var windowWidth = window.innerWidth;
+    var staticBackdrop = document.getElementById("staticBackdrop")
+    if (windowWidth < 992) {
+        body.classList.add('small-screen');
+        staticBackdrop.classList.replace('offcanvas-start', 'offcanvas-bottom');
+        startJourny.addEventListener("click", function () {
+            hero.classList.add("pt-5")
+        })
+    } else {
+        body.classList.remove('small-screen');
+        staticBackdrop.classList.replace('offcanvas-bottom', 'offcanvas-start')
 
-   }
+
+    }
 });
 
- window.dispatchEvent(new Event('resize'));
+window.dispatchEvent(new Event('resize'));
