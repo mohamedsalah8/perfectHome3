@@ -6,11 +6,16 @@
     z-index: 99;
 
     @media (max-width:1400px) {
-        padding: 32px 0;
+        padding: 32px 15px;
     }
     @media (max-width:767px) {
-        padding: 12px 0;
+        padding: 12px 8px;
          
+    }
+    .container-fluid {
+        @media (max-width:1400px) {
+            padding: 0 15px;
+        } 
     }
     .navbar-brand {
         img {

@@ -9,12 +9,17 @@
 }
 @media (max-width: 1400px) {
   .header {
-    padding: 32px 0;
+    padding: 32px 15px;
   }
 }
 @media (max-width: 767px) {
   .header {
-    padding: 12px 0;
+    padding: 12px 8px;
+  }
+}
+@media (max-width: 1400px) {
+  .header .container-fluid {
+    padding: 0 15px;
   }
 }
 .header .navbar-brand img {
