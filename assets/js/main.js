@@ -19,11 +19,19 @@ let otherElements = svg.querySelectorAll("rect:not(.smartCam)");
 let otherElements2 = svg.querySelectorAll("rect:not(.garage)");
 let smartEnergy = svg.querySelectorAll(".smartEnergy");
 let otherElements3 = svg.querySelectorAll("rect:not(.smartEnergy):not(.garage)");
-
 let smartLightElements = svg.querySelectorAll(".smartLight");
+
+let smartLightElements1 = svg.querySelectorAll("#smartLight1");
+let smartLightElements2 = svg.querySelectorAll("#smartLight2");
+let smartLightElements3 = svg.querySelectorAll("#smartLight3");
+let smartLightElements4 = svg.querySelectorAll("#smartLight4");
+let smartLightElementsOthers = svg.querySelectorAll("rect:not(.smartLight)");
+
 let otherElementsSmartLight = svg.querySelectorAll("rect:not(.smartLightRect)");
 
-let smartCurtainsElements = svg.querySelectorAll(".smartCurtains");
+let smartCurtainsElements1 = svg.querySelectorAll("#smartCurtains1");
+let smartCurtainsElements2 = svg.querySelectorAll("#smartCurtains2");
+let smartCurtainsElements3 = svg.querySelectorAll("#smartCurtains3");
 let otherElementsCurtains = svg.querySelectorAll("rect:not(.smartCurtainsParent)");
 // hero
 let hero = document.getElementById("hero");
@@ -52,7 +60,7 @@ showJourny.addEventListener("click", () => {
     for (let i = 0; i < journy.length; i++) {
         journy[i].classList.replace('hideText', 'showText');
     }
-     for (let i = 0; i < cardinfo.length; i++) {
+    for (let i = 0; i < cardinfo.length; i++) {
         cardinfo[i].classList.replace('showText', 'hideText');
 
     }
@@ -62,41 +70,70 @@ showJourny.addEventListener("click", () => {
 
 cctv.addEventListener("click", () => {
     resetGrage()
-    resetCurtains()
+    resetCurtains1()
+    resetCurtains2()
+    resetCurtains3()
     resetSmartEnergy()
-    resetSmartLight()
+    resetSmartLight1()
+    resetSmartLight2()
+    resetSmartLight3()
+    resetSmartLight4()
+
     highlightSmartCam();
 
 })
 smartGarage.addEventListener("click", () => {
-    resetCurtains()
+    resetCurtains1()
+    resetCurtains2()
+    resetCurtains3()
     resetSmartEnergy()
-    resetSmartLight()
+    resetSmartLight1()
+    resetSmartLight2()
+    resetSmartLight3()
+    resetSmartLight4()
+
     resetSmartEnergy()
-    resetCurtains()
     highlightGrage();
 });
 
 energy.addEventListener("click", () => {
     resetGrage()
-    resetCurtains()
+    resetCurtains1()
+    resetCurtains2()
+    resetCurtains3()
     resetCam()
-    resetSmartLight()
+    resetSmartLight1()
+    resetSmartLight2()
+    resetSmartLight3()
+    resetSmartLight4()
+
     highlightSmartEnergy();
     highlightGrage();
 });
 smartCurtains.addEventListener("click", () => {
     resetCam()
-    resetSmartLight()
+    resetSmartLight1()
+    resetSmartLight2()
+    resetSmartLight3()
+    resetSmartLight4()
+
     resetSmartEnergy()
-    highlightCurtains()
+    highlightCurtains1()
+    highlightCurtains2()
+    highlightCurtains3()
 })
 smartLightBtn.addEventListener("click", () => {
     resetGrage()
     resetSmartEnergy()
-    resetCurtains()
+    resetCurtains1()
+    resetCurtains2()
+    resetCurtains3()
     resetCam()
-    highlighSmartLight()
+    highlighSmartLight1()
+    highlighSmartLight2()
+    highlighSmartLight3()
+    highlighSmartLight4()
+
 })
 
 
@@ -105,7 +142,8 @@ smartLightBtn.addEventListener("click", () => {
 function highlightSmartCam() {
     smartCamElements.forEach(function (element) {
         element.setAttribute("stroke", "#E99A00");
-        element.setAttribute("stroke-width", "2");
+        element.setAttribute("stroke-width", "3"
+        );
         element.setAttribute("rx", "48");
         element.setAttribute("opacity", "1");
 
@@ -145,7 +183,8 @@ function resetGrage() {
 function highlightSmartEnergy() {
     smartEnergy.forEach(function (element) {
         element.setAttribute("stroke", "#E99A00");
-        element.setAttribute("stroke-width", "2");
+        element.setAttribute("stroke-width", "3"
+        );
         element.setAttribute("r", "50");
         element.setAttribute("cy", "550");
         element.setAttribute("cx", "210");
@@ -166,12 +205,16 @@ function resetSmartEnergy() {
         element.removeAttribute("opacity", "0.5");
     });
 }
-function highlightCurtains() {
-    smartCurtainsElements.forEach(function (element) {
+function highlightCurtains1() {
+    smartCurtainsElements1.forEach(function (element) {
         element.setAttribute("stroke", "#E99A00");
-        element.setAttribute("stroke-width", "2");
+        element.setAttribute("stroke-width", "3"
+        );
         element.setAttribute("rx", "48");
         element.setAttribute("opacity", "1");
+        element.setAttribute("r", "55");
+        element.setAttribute("cy", "150");
+        element.setAttribute("cx", "430");
 
         transWithAction.forEach(transWithAction => {
             transWithAction.classList.add('translevelWithAction');
@@ -182,11 +225,91 @@ function highlightCurtains() {
 
     });
 }
-function resetCurtains() {
-    smartCurtainsElements.forEach(function (element) {
+function highlightCurtains2() {
+    smartCurtainsElements2.forEach(function (element) {
+        element.setAttribute("stroke", "#E99A00");
+        element.setAttribute("stroke-width", "3"
+        );
+        element.setAttribute("rx", "48");
+        element.setAttribute("opacity", "1");
+        element.setAttribute("r", "35");
+        element.setAttribute("cy", "230");
+        element.setAttribute("cx", "240");
+
+        transWithAction.forEach(transWithAction => {
+            transWithAction.classList.add('translevelWithAction');
+        });
+        otherElementsCurtains.forEach(function (element) {
+            element.setAttribute("opacity", "0.5");
+        });
+
+    });
+}
+
+function highlightCurtains3() {
+    smartCurtainsElements3.forEach(function (element) {
+        element.setAttribute("stroke", "#E99A00");
+        element.setAttribute("stroke-width", "3"
+        );
+        element.setAttribute("rx", "48");
+        element.setAttribute("opacity", "1");
+        element.setAttribute("r", "60");
+        element.setAttribute("cy", "470");
+        element.setAttribute("cx", "830");
+
+        transWithAction.forEach(transWithAction => {
+            transWithAction.classList.add('translevelWithAction');
+        });
+        otherElementsCurtains.forEach(function (element) {
+            element.setAttribute("opacity", "0.5");
+        });
+
+    });
+}
+
+function resetCurtains1() {
+    smartCurtainsElements1.forEach(function (element) {
         element.removeAttribute("stroke");
         element.removeAttribute("stroke-width");
         element.removeAttribute("rx");
+        element.removeAttribute("opacity");
+        element.removeAttribute("r");
+        element.removeAttribute("cy");
+        element.removeAttribute("cx");
+        transWithAction.forEach(transWithAction => {
+            transWithAction.classList.remove('translevelWithAction');
+        });
+        otherElementsCurtains.forEach(function (element) {
+            element.removeAttribute("opacity");
+        });
+    });
+}
+function resetCurtains2() {
+    smartCurtainsElements2.forEach(function (element) {
+        element.removeAttribute("stroke");
+        element.removeAttribute("stroke-width");
+        element.removeAttribute("rx");
+        element.removeAttribute("opacity");
+        element.removeAttribute("r");
+        element.removeAttribute("cy");
+        element.removeAttribute("cx");
+        transWithAction.forEach(transWithAction => {
+            transWithAction.classList.remove('translevelWithAction');
+        });
+        otherElementsCurtains.forEach(function (element) {
+            element.removeAttribute("opacity");
+        });
+    });
+}
+function resetCurtains3() {
+    smartCurtainsElements3.forEach(function (element) {
+        element.removeAttribute("stroke");
+        element.removeAttribute("stroke-width");
+        element.removeAttribute("rx");
+        element.removeAttribute("opacity");
+        element.removeAttribute("r");
+        element.removeAttribute("cy");
+        element.removeAttribute("cx");
         transWithAction.forEach(transWithAction => {
             transWithAction.classList.remove('translevelWithAction');
         });
@@ -196,24 +319,101 @@ function resetCurtains() {
     });
 }
 
-function highlighSmartLight() {
-    smartLightElements.forEach(function (element) {
+function highlighSmartLight1() {
+    smartLightElements1.forEach(function (element) {
         element.setAttribute("stroke", "#E99A00");
         element.setAttribute("stroke-width", "3");
-        element.setAttribute("rx", "48");
+        element.setAttribute("cx", "420");
+        element.setAttribute("cy", "380");
+        element.setAttribute("r", "30");
 
         otherElementsSmartLight.forEach(function (element) {
             element.setAttribute("opacity", "0.5");
         });
     });
 }
+function highlighSmartLight2() {
+    smartLightElements2.forEach(function (element) {
+        element.setAttribute("stroke", "#E99A00");
+        element.setAttribute("stroke-width", "3");
+        element.setAttribute("cx", "730");
+        element.setAttribute("cy", "435");
+        element.setAttribute("r", "30");
 
-function resetSmartLight() {
-    smartLightElements.forEach(function (element) {
+        otherElementsSmartLight.forEach(function (element) {
+            element.setAttribute("opacity", "0.5");
+        });
+    });
+}
+function highlighSmartLight3() {
+    smartLightElements3.forEach(function (element) {
+        element.setAttribute("stroke", "#E99A00");
+        element.setAttribute("stroke-width", "3");
+        element.setAttribute("cx", "620");
+        element.setAttribute("cy", "480");
+        element.setAttribute("r", "25");
+
+        otherElementsSmartLight.forEach(function (element) {
+            element.setAttribute("opacity", "0.5");
+        });
+    });
+}
+function highlighSmartLight4() {
+    smartLightElements4.forEach(function (element) {
+        element.setAttribute("stroke", "#E99A00");
+        element.setAttribute("stroke-width", "3");
+        element.setAttribute("cx", "510");
+        element.setAttribute("cy", "180");
+        element.setAttribute("r", "25");
+
+        otherElementsSmartLight.forEach(function (element) {
+            element.setAttribute("opacity", "0.5");
+        });
+    });
+}
+function resetSmartLight1() {
+    smartLightElements1.forEach(function (element) {
         element.removeAttribute("stroke", "#E99A00");
-        element.removeAttribute("stroke-width", "2");
-        element.removeAttribute("rx", "48");
-
+        element.removeAttribute("stroke-width", "3");
+        element.removeAttribute("cx", "510");
+        element.removeAttribute("cy", "180");
+        element.removeAttribute("r", "25");
+        otherElementsSmartLight.forEach(function (element) {
+            element.removeAttribute("opacity", "0.5");
+        });
+    });
+}
+function resetSmartLight2() {
+    smartLightElements2.forEach(function (element) {
+        element.removeAttribute("stroke", "#E99A00");
+        element.removeAttribute("stroke-width", "3");
+        element.removeAttribute("cx", "510");
+        element.removeAttribute("cy", "180");
+        element.removeAttribute("r", "25");
+        otherElementsSmartLight.forEach(function (element) {
+            element.removeAttribute("opacity", "0.5");
+        });
+    });
+}
+function resetSmartLight3() {
+    smartLightElements3.forEach(function (element) {
+        element.removeAttribute("stroke", "#E99A00");
+        element.removeAttribute("stroke-width", "3");
+        element.removeAttribute("cx", "510");
+        element.removeAttribute("cy", "180");
+        element.removeAttribute("r", "25");
+        otherElementsSmartLight.forEach(function (element) {
+            element.removeAttribute("opacity", "0.5");
+        });
+    });
+}
+function resetSmartLight4() {
+    smartLightElements4.forEach(function (element) {
+        element.removeAttribute("stroke", "#E99A00");
+        element.removeAttribute("stroke-width", "3");
+        element.removeAttribute("cx", "510");
+        element.removeAttribute("cy", "180");
+        element.removeAttribute("r", "25");
         otherElementsSmartLight.forEach(function (element) {
             element.removeAttribute("opacity", "0.5");
         });
