@@ -18,7 +18,7 @@ let garageElements = svg.querySelectorAll(".garage");
 let otherElements = svg.querySelectorAll("rect:not(.smartCam)");
 let otherElements2 = svg.querySelectorAll("rect:not(.garage)");
 let smartEnergy = svg.querySelectorAll(".smartEnergy");
-let otherElements3 = svg.querySelectorAll("rect:not(.smartEnergy):not(.garage)");
+let otherElements3 = svg.querySelectorAll("rect:not(.smartEnergy)");
 let smartLightElements = svg.querySelectorAll(".smartLight");
 
 let smartLightElements1 = svg.querySelectorAll("#smartLight1");
@@ -108,8 +108,7 @@ energy.addEventListener("click", () => {
     resetSmartLight4()
 
     highlightSmartEnergy();
-    highlightGrage();
-});
+ });
 smartCurtains.addEventListener("click", () => {
     resetCam()
     resetSmartLight1()
@@ -170,7 +169,7 @@ function highlightGrage() {
     });
     resetCam()
 }
-function resetGrage() {
+function resetGrage() { 
     garageElements.forEach(function (element) {
         element.removeAttribute("opacity");
     });
@@ -183,8 +182,7 @@ function resetGrage() {
 function highlightSmartEnergy() {
     smartEnergy.forEach(function (element) {
         element.setAttribute("stroke", "#E99A00");
-        element.setAttribute("stroke-width", "3"
-        );
+        element.setAttribute("stroke-width", "3");
         element.setAttribute("r", "50");
         element.setAttribute("cy", "550");
         element.setAttribute("cx", "210");
